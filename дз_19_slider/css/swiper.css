@@ -1,0 +1,16 @@
+/* swiper */
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  color: #00aced;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  color: #00aced;
+  line-height: 20px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./js/carousel/owl.carousel.min.js"></script>
+    <script src="./js/lightbox/lightbox.js"></script>
+    <title>carousel slider</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="./index.html">главная</a></li>
+                <li><a href="./slick.html">slick</a></li>
+                <li><a href="./swiper.html">swiper</a></li>
+                <li><a href="./thumbs.html">thumbs</a> </li>
+                <li><a href="./masonry.html">masonry</a> </li>
+            </ul>
+        </nav>
+        <div class="owl-carousel owl-theme">
+            <div>
+                <a href="./images/audi_r8.jpg" data-lightbox="image-1"><img src="./images/audi_r8.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="./images/bentley.jpg" data-lightbox="image-1"><img src="./images/bentley.jpg" alt=""></a>
+
+            </div>
+            <div>
+                <a href="./images/porshe_911.jpg" data-lightbox="image-1"><img src="./images/porshe_911.jpg" alt=""></a>
+
+            </div>
+            <div>
+                <a href="./images/mustang.jpg" data-lightbox="image-1"><img src="./images/mustang.jpg" alt=""></a>
+
+            </div>
+            <div>
+                <a href="./images/maklaren.jpg" data-lightbox="image-1"><img src="./images/maklaren.jpg" alt=""></a>
+
+            </div>
+            <div>
+                <a href="./images/lamborghini.jpg" data-lightbox="image-1"><img src="./images/lamborghini.jpg"
+                        alt=""></a>
+
+            </div>
+            <div>
+                <a href="./images/corolla.jpg" data-lightbox="image-1"><img src="./images/corolla.jpg" alt=""></a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+<script>
+    // carousel
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 5,
+            margin: 10,
+            nav: true,
+            loop: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                768: {
+                    items: 3,
+                    nav: false
+                },
+                1024: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+    });
+
+    // lightbox
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        "disableScrolling": true,
+        "fitImagesInViewport": true,
+        "imageFadeDuration": 600,
+        "wrapAround": true
+    })
+</script>
+
+<script>
+
+</script>

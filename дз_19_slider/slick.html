@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./js/slick/slick.min.js"></script>
+    <title>slick slider</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="./index.html">главная</a></li>
+                <li><a href="./swiper.html">swiper</a></li>
+                <li><a href="./carousel.html">carousel</a></li>
+                <li><a href="./thumbs.html">thumbs</a> </li>
+                <li><a href="./masonry.html">masonry</a> </li>
+            </ul>
+        </nav>
+        <div class="slider fade">
+            <div><img src="./images/audi_r8.jpg" alt=""></div>
+            <div><img src="./images/bentley.jpg" alt=""></div>
+            <div><img src="./images/chellendzher.jpg" alt=""></div>
+            <div><img src="./images/corolla.jpg" alt=""></div>
+            <div><img src="./images/gtr.jpg" alt=""></div>
+            <div><img src="./images/lamborghini.jpg" alt=""></div>
+            <div><img src="./images/maklaren.jpg" alt=""></div>
+            <div><img src="./images/porshe_911.jpg" alt=""></div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+
+    $(document).ready(function () {
+        $('.fade').slick({
+            infinite: true,
+            autoplay: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    });
+
+
+
+</script>
